@@ -1,7 +1,20 @@
 import './App.css'
-
+import {BrowserRouter as Router, 
+  Route,
+  Routes,
+  Navigate,
+  } from 'react-router-dom'
+import Profile from './components/Profile/Profile'
 function App() {
-  return <>Hello World</>
+  return (
+    <Router>
+      <Routes>
+        <Route path='/profile/:id' element={<Profile/>}/>
+      </Routes>
+    </Router>
+  )
 }
 
 export default App
+
+//npm i  styled-components react-router-dom
