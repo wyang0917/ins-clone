@@ -2,8 +2,8 @@ import {useParams} from "react-router-dom"
 import {InfoContainer, Info,Stats,Bio} from "./Profile.styles"
 import {initialState as profileData} from "../../Redux/ProfileData";
 import {initialState as postData} from "../../Redux/PostData"
-//npm install @mui/icons-material
-//npm i @emotion/styled   use icons from icon kit  MUI
+//npm install @mui/icons-material   
+//npm i @emotion/styled   use icons from icon kit  MUI   通过安装library使用icon
 import CheckCircle from "@mui/icons-material/CheckCircle"
 const ProfileInfo = ()=>{
   const {id} =useParams();
